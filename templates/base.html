@@ -18,6 +18,8 @@
                 <!-- Right Side: Log In / Sign Up or User Dropdown -->
                 <div>
                     {% if user.is_authenticated %}
+                    <li><a href="{% url 'article_new' %}"
+                        class="nav-link px-2 link-dark">+ New</a></li>
                         <div class="dropdown text-end">
                             <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
                                 {{ user.username }}

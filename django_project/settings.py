@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     # Local
     "accounts.apps.AccountsConfig",
     "pages.apps.PagesConfig",
+    "articles.apps.ArticlesConfig",
 ]
 
 AUTH_USER_MODEL = "accounts.CustomUser" # new
